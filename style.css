@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background: violet;
+
+    /* nomi */
+    animation-name: box;
+    /* davomiyligi */
+    animation-duration: 3s;
+
+    /* kutish vaqti */
+    animation-delay: 0s;
+    /* takrorlanish (infinite -> cheksiz) */
+    animation-iteration-count: 4;
+    /* holati yoki qandayligi */
+    animation-timing-function: linear;
+    /* forwards oxirgi qiymatlarni saqlab qolish */
+    animation-fill-mode: forwards;
+    /* yo'nalish */
+    animation-direction: reverse;
+
+}
+/* mega animation */
+@keyframes box {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(400px);
+        background-color: red;
+    }
+    50%{
+        transform: translateX(400px) translateY(400px);
+        background-color: blue;
+    }
+    75%{
+        transform: translateX(0px) translateY(400px);
+        background-color: gold;
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+        background-color: violet;
+    }
+}
+
+/* mini animation */
+/* @keyframes box {
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform: rotate(360deg) translateY(200px);
+    }
+} */
+

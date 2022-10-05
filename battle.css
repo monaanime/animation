@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background: violet;
+    position: absolute;
+    top: 0;
+}
+.anime1{
+    left: 0;
+    animation: anime1 1s alternate  infinite;
+}
+@keyframes anime1 {
+    to{
+        left:calc(50% - 150px);
+    }
+}
+.anime2{
+    right: 0;
+    animation: anime2 1s  alternate infinite;
+   
+}
+@keyframes anime2 {
+    to{
+        right: calc(50% - 150px)
+    }
+}
